@@ -10,6 +10,7 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 <script type="text/javascript" src="search.js"></script>
+<title>Vue.js Dictionary</title>
 </head>
 
 <body>
