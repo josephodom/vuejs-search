@@ -17,7 +17,7 @@
 <header>
 	<div class="container">
 		<h1>
-			Vue.js Search Example
+			Vue.js Dictionary
 		</h1>
 	</div>
 </header>
@@ -48,7 +48,7 @@
 			</ul>
 			
 			<button type="button" class="btn btn-primary" v-on:click="loadMore" v-if="page < totalPages">
-				More (Page {{ page }} of {{ totalPages }})
+				Load More (Page {{ page }} of {{ totalPages }})
 			</button>
 		</section>
 		
@@ -63,6 +63,12 @@
 		</section>
 	</div><!-- .container -->
 </main>
+
+<footer>
+	<div class="container">
+		&copy; Joseph Odom <?=date('Y')?>
+	</div>
+</footer>
 
 </body>
 
