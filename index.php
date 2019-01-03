@@ -31,18 +31,36 @@
 				</p>
 				
 				<input type="text" name="s" class="form-control" placeholder="Keywords" v-on:change="updateSearch" v-on:keyup="updateSearch">
-			</div><!-- .card-body -->
-		</div><!-- .card -->
+			</div>
+		</div>
 		
-		<ul class="results" v-if="searchResults.length">
-			<li v-for="result in searchResults">
-				<div class="card">
-					<div class="card-body">
-						{{ result }}
+		
+		
+		<section v-if="searchResults.length">
+			<ul class="results">
+				<li v-for="result in searchResults">
+					<div class="card">
+						<div class="card-body">
+							{{ result.word }}
+						</div>
 					</div>
+				</li>
+			</ul>
+			
+			<button type="button" class="btn btn-primary" v-on:click="loadMore" v-if="page < totalPages">
+				More (Page {{ page }} of {{ totalPages }})
+			</button>
+		</section>
+		
+		
+		
+		<section v-if="!searchResults.length && searchTerm.length">
+			<div class="card">
+				<div class="card-body">
+					No results!
 				</div>
-			</li>
-		</ul>
+			</div>
+		</section>
 	</div><!-- .container -->
 </main>
 
