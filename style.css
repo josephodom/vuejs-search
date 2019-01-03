@@ -1,0 +1,28 @@
+/* == ELEMENTS == */
+
+body {
+	background-color: #F5F5F5;
+}
+
+header {
+	background-color: #FFF;
+	margin-bottom: 2em;
+	padding: 2em 0;
+}
+
+
+
+/* == CLASSES == */
+
+.card {
+	border-radius: 0;
+	border-width: 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 2em;
+}
+
+.results {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
